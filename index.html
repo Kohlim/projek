@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Muhammad Afifudin">
+	<meta name="description" content="Sistem Pencarian Kode Klasifikasi Unofficial merupakan situs pencari kode berbagai jenis klasifikasi statistik yang diterbitkan BPS seperti KBLI, KBJI, dan KBKI">
+	<meta name="keywords" content="Sistem Pencarian Kode, Klasifikasi Statistik, KBLI, Lapangan Usaha, KBJI, Jabatan, Susenas, Sakernas, KBKI, BPS, Badan Pusat Statistik, SPK Online, Redesain">
+	<meta name="theme-color" content="#F8D800">
+	<link rel="shortcut icon" href="assets/img/spk-online-icon.png" type="image/x-icon">
+	<meta property="og:site_name" content="Sistem Pencarian Kode Klasifikasi Unofficial">
+	<meta property="og:description" content="Sistem Pencarian Kode Klasifikasi Unofficial merupakan situs pencari kode berbagai jenis klasifikasi statistik yang diterbitkan BPS seperti KBLI, KBJI, dan KBKI">
+	<meta property="og:image" content="https://afiiif.github.io/spk/assets/img/og-img/bps-spk.png">
+	<meta property="og:title" content="Sistem Pencarian Kode Klasifikasi Unofficial · Cari klasifikasi statistik dengan lebih mudah!">
+	<meta property="og:url" content="https://afiiif.github.io/spk/">
+	<title>Sistem Pencarian Kode Klasifikasi Unofficial · Cari klasifikasi statistik dengan lebih mudah!</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="lib/atlantis-lite/mod-2/atlantis.mod.css">
+	<link rel="stylesheet" href="assets/css/main.min.css?v=1.3.4">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<style>
+		body {
+			background-attachment: fixed;
+			min-height: 100%;
+		}
+
+		.col-auto>a {
+			display: inline-block;
+			width: 135px;
+			text-decoration: none;
+			position: relative;
+			top: 0;
+		}
+
+		.col-auto>a:hover {
+			top: -4px;
+		}
+
+		.col-auto>a:hover i {
+			color: #F8D800 !important;
+		}
+
+		.bg-white-op-8 {
+			background-color: rgba(255, 255, 255, .8);
+		}
+
+		body.dark-mode header {
+			color: #fff;
+			background: transparent !important;
+		}
+
+		body.dark-mode .bg-white-op-8 {
+			background-color: rgb(53, 54, 58, .4);
+		}
+	</style>
+</head>
+
+<body class="bg-yellow-gradient text-black d-flex align-items-center justify-content-center px-3 pt-5 pb-4 pb-md-35">
+
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+		<div class="modal-dialog" id="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal-title"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Batal"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body" id="modal-body"></div>
+				<div class="border-top text-danger text-right" id="modal-error" style="display: none;"></div>
+				<div class="modal-footer" id="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<header>
+			<div class="d-flex mx--a justify-content-center d-md-none">
+				<div class="col-auto pr-0"><i class="icon-eyeglass fz-40"></i></div>
+				<div class="col-auto">
+					<h1 class="fw-3 text-nowrap lh-110 fz-16 pr-3">SISTEM PENCARIAN<div class="fw-9 fz-18">KODE KLASIFIKASI</div>
+					</h1>
+				</div>
+			</div>
+			<div class="row justify-content-center d--md-flex">
+				<div class="col-auto"><i class="icon-eyeglass fz-72"></i></div>
+				<div class="col-auto">
+					<h1 class="fw-3 text-nowrap lh-110">SISTEM PENCARIAN<div class="fw-9" style="font-size: 30px;">KODE KLASIFIKASI</div>
+					</h1>
+				</div>
+			</div>
+			<div class="ribbon-wrapper">
+				<div class="ribbon-top-right bg-info text-white cur-p about-btn">UNOFFICIAL</div>
+			</div>
+		</header>
+		<main class="row row-8 row-md-10 mt-45 mt-md-55 justify-content-center text-center">
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbli-2015" class="text-reset card h-100 mb-0 animated animated-1s flipInY" title="Klasifikasi Baku Lapangan Usaha Indonesia 2015" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fas fa-fw fa-briefcase fz-64"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBLI 2015</h2>
+					</div>
+				</a>
+			</div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbji-2014" class="text-reset card h-100 mb-0 animated animated-1s flipInY" title="Klasifikasi Baku Jabatan Indonesia 2014" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fab fa-fw fa-black-tie fz-64"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBJI 2014</h2>
+					</div>
+				</a>
+			</div>
+			<div class="w-100 d-md-none"></div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbki-2012-barang" class="text-reset card h-100 mb-0 animated animated-1s flipInY" title="Klasifikasi Baku Komoditi Indonesia Indonesia 2012 - Barang" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fas fa-fw fa-cubes fz-64"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBKI 2012<div class="fw-4 fz-14 mb--1">BARANG</div>
+						</h2>
+					</div>
+				</a>
+			</div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbki-2013-jasa" class="text-reset card h-100 mb-0 animated animated-1s flipInY" title="Klasifikasi Baku Komoditi Indonesia 2013 - Jasa" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fas fa-fw fa-handshake fz-64"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBKI 2013<div class="fw-4 fz-14 mb--1">JASA</div>
+						</h2>
+					</div>
+				</a>
+			</div>
+			<div class="w-100"></div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbli-2009" class="text-reset card h-100 mb-0 bg-white-op-8 animated animated-1s flipInY" title="Klasifikasi Baku Lapangan Usaha Indonesia 2009" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fas fa-fw fa-briefcase fz-64 text-muted"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBLI 2009</h2>
+					</div>
+				</a>
+			</div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbli-2005" class="text-reset card h-100 mb-0 bg-white-op-8 animated animated-1s flipInY" title="Klasifikasi Baku Lapangan Usaha Indonesia 2005" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fas fa-fw fa-briefcase fz-64 text-muted"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBLI 2005</h2>
+					</div>
+				</a>
+			</div>
+			<div class="col-auto mb-3 mb-md-35">
+				<a href="kbji-2002" class="text-reset card h-100 mb-0 bg-white-op-8 animated animated-1s flipInY" title="Klasifikasi Baku Jabatan Indonesia 2002" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+					<div class="card-body">
+						<i class="fab fa-fw fa-black-tie fz-64 text-muted"></i>
+						<h2 class="fw-9 mb-0 mt-2 fz-16 lh-120">KBJI 2002</h2>
+					</div>
+				</a>
+			</div>
+		</main>
+		<footer class="text-center mt-45 mt-md-5">
+			<a href="javascript:void(0)" class="about-btn text-reset fz-md-16"><i class="icon-info d-inline-block mr-2"></i>Tentang</a>
+			<div class="pt-3 pl-3">
+				<iframe src="https://ghbtns.com/github-btn.html?user=afiiif&repo=spk&type=star&count=true" scrolling="0" width="86px" height="20px" frameborder="0"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=afiiif&repo=spk&type=fork&count=true" scrolling="0" width="86px" height="20px" frameborder="0"></iframe>
+			</div>
+		</footer>
+	</div>
+
+	<section id="about" class="d-none">
+		<div><span class="fw-7">Sistem Pencarian Kode Klasifikasi <i>Unofficial</i></span> merupakan situs pencari kode berbagai jenis klasifikasi statistik yang diterbitkan Badan Pusat Statistik (BPS) seperti KBLI, KBJI, dan KBKI. Situs ini bersifat <b class="text-danger">tidak resmi (<i>unofficial</i>)</b>. Situs ini merupakan hasil redesain dari situs resmi SPK Online yang dapat diakses oleh publik secara gratis pada alamat <a href="https://spkonline.bps.go.id/" target="_blank" class="text-primary">spkonline.bps.go.id</a>, dan aplikasi SPK Android Official yang dapat diunduh secara gratis di Play Store.</div>
+		<div class="mt-3">Data kode & deskripsi pada situs ini diambil dari database yang terdapat pada aplikasi SPK Android Official pada bulan April 2020.</div>
+		<div class="my-3">Situs ini memiliki fitur pencarian klasifikasi dengan memasukkan kata kunci ataupun kode klasifikasi. Terdapat juga fitur eksplorasi yang memungkinkan pengguna melihat hierarki klasifikasi.</div>
+		<hr class="mx--3">
+		<div>Situs ini bersifat <i>open-source</i>, dikelola oleh <a href="https://www.linkedin.com/in/m-afifudin/" target="_blank" class="text-primary">Muhammad Afifudin</a>. Situs ini tidak memberikan jaminan apapun. Pengelola situs tidak bertanggung jawab atas kualitas informasi yang disajikan. Masukan terkait fitur atau pelaporan <i>bug</i> pada situs ini dapat disampaikan melalui repositori GitHub pada alamat <a href="https://github.com/afiiif/spk/issues" class="text-primary" target="_blank">github.com/afiiif/spk</a>.</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="assets/js/utils.min.js?v=1.3.4"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			$('body').tooltip({
+				selector: '[data-toggle="tooltip"]',
+				html: true
+			});
+			if (typeof(Storage) !== 'undefined') {
+				if (localStorage.getItem('spk-dark')) {
+					document.getElementsByTagName('body')[0].classList.add('dark-mode');
+					document.querySelector('meta[name="theme-color"]').setAttribute('content', '#202124');
+				}
+			}
+			Array.from(document.getElementsByClassName('about-btn')).forEach(function (elm) {
+				elm.addEventListener('click', function () {
+					utils.modal.init({
+						title: 'Tentang',
+						body: document.getElementById('about').innerHTML,
+						btnCloseLabel: 'Tutup',
+						btnClass: 'd-none',
+					});
+				}, false);
+			});
+		});
+	</script>
+
+</body>
+
+</html>

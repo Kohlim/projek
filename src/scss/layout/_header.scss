@@ -1,0 +1,195 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+
+    >nav {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: flex;
+
+        #nav-brand {
+            font-size: 26px;
+            color: $theme-black;
+            transition: all .5s ease-in-out;
+            text-transform: uppercase;
+
+            >i {
+                display: inline-block;
+                margin-right: 12px;
+                position: relative;
+                top: 1px;
+            }
+
+            >div {
+                display: inline-block;
+                font-weight: 300;
+
+                &:last-child {
+                    font-weight: 400;
+                    margin-left: .3em;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $theme-black;
+                text-decoration: none;
+            }
+
+            &:hover>i {
+                animation-name: rubberBand;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+        }
+    }
+
+    #loading {
+        color: $theme-black;
+    }
+
+    .explore-wrapper {
+        position: absolute;
+        bottom: 18px;
+        right: 15px;
+        font-size: 18px;
+        transition: all .5s ease-in-out;
+
+        >.btn {
+            font-size: inherit;
+            opacity: .7;
+
+            >i {
+                display: inline-block;
+                margin-right: 12px;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                >i {
+                    animation-name: tada;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+    }
+
+    .about-wrapper {
+        position: absolute;
+        bottom: 18px;
+        left: 15px;
+        font-size: 18px;
+        transition: left .5s ease-in-out;
+
+        >a {
+            opacity: .7;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 0;
+
+            >i {
+                display: inline-block;
+            }
+
+            &:hover {
+                color: unset;
+                opacity: 1;
+
+                >i {
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                    animation-name: rubberBand;
+                }
+            }
+        }
+    }
+}
+
+.header.bg-danger-gradient {
+
+    #nav-brand,
+    #loading {
+        color: #fff;
+    }
+}
+
+.search-active .header {
+    height: 97px;
+
+    #nav-brand {
+        margin-top: 1px;
+        font-size: 14px;
+
+        >i {
+            margin-right: 8px;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 20px;
+
+            >.fw-3 {
+                display: block;
+                text-align: right;
+            }
+
+            >div {
+                &:nth-child(3) {
+                    font-size: 16px;
+                    margin-left: 2px;
+                }
+
+                &:last-child {
+                    display: block;
+                    margin-left: 28px;
+                }
+            }
+        }
+    }
+
+    .explore-wrapper {
+        bottom: 55px;
+        font-size: 12px;
+    }
+
+    .about-wrapper {
+        left: -100px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+
+        height: 80px;
+
+        .explore-wrapper {
+            bottom: 7px;
+            font-size: 24px;
+
+            >.btn {
+                line-height: 1.35;
+
+                >i {
+                    margin-right: 0;
+                }
+
+                >span {
+                    display: block;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+}
